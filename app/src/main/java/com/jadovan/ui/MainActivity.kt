@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         registerReceiver(receiver, IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE))
 
         createChannel(
-                CHANNEL_ID.toString(),
+                getString(R.string.notification_channel_id),
                 getString(R.string.notification_title)
         )
 
@@ -96,7 +96,6 @@ class MainActivity : AppCompatActivity() {
     companion object {
         private var URL =
                 "https://github.com/udacity/nd940-c3-advanced-android-programming-project-starter/archive/master.zip"
-        private const val CHANNEL_ID = R.string.notification_channel_id
     }
 
     private fun createChannel(channelId: String, channelName: String) {
@@ -113,7 +112,7 @@ class MainActivity : AppCompatActivity() {
             notificationChannel.enableLights(true)
             notificationChannel.lightColor = Color.RED
             notificationChannel.enableVibration(true)
-            notificationChannel.description = R.string.notification_description.toString()
+            notificationChannel.description = getString(R.string.notification_description)
 
             val notificationManager = getSystemService(
                     NotificationManager::class.java
