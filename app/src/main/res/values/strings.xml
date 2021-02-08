@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Load Status</string>
+    <string name="app_description">Download files from Internet</string>
+    <string name="action_settings">Settings</string>
+    <string name="load_status_logo">Load Status Logo</string>
+
+    <string name="notification_channel_id">load_status_channel</string>
+    <string name="notification_title">Udacity: Android Kotlin Nanodegree </string>
+    <string name="notification_description">The selected repository has been downloaded</string>
+    <string name="notification_button">Check status here</string>
+
+    <string name="button_name">Download</string>
+    <string name="button_loading">Downloading</string>
+    <string name="title_activity_detail">Load Status Details</string>
+
+    <string name="glide_radio_btn_label">Glide - Image Loading Library by BumpTech</string>
+    <string name="loadapp_radio_btn_label">LoadApp - Current repository by Udacity</string>
+    <string name="retrofit_radio_btn_label">Retrofit - Type-safe HTTP client for Android and
+        Java by Square, Inc.</string>
+
+    <string name="error_message">Please select the file to download</string>
+
+    <string name="status_successful">Success</string>
+    <string name="status_failure">Failed</string>
+    <string name="download_name_label">Download Name</string>
+    <string name="download_status_label">Download Status</string>
+    <string name="ok_button">OK</string>
+
+</resources>

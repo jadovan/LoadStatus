@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <com.jadovan.button.LoadingButton
+        android:id="@+id/custom_button"
+        android:layout_width="@dimen/zero_size"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/radio_default_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:loadingButtonAnimatedText="@string/button_loading"
+        app:loadingButtonBackgroundColor="@color/colorPrimary"
+        app:loadingButtonCircleColor="@color/colorAccent"
+        app:loadingButtonColor="@color/colorPrimaryDark"
+        app:loadingButtonTextColor="@color/white"
+        app:loadingButtonTextSize="@dimen/default_text_size" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="347dp"
+        android:layout_height="246dp"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        app:layout_constraintBottom_toTopOf="@+id/custom_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <RadioButton
+            android:id="@+id/glide_radio_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/radio_default_margin"
+            android:text="@string/glide_radio_btn_label"
+            android:textSize="@dimen/default_text_size" />
+
+        <RadioButton
+            android:id="@+id/loadapp_radio_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/radio_default_margin"
+            android:text="@string/loadapp_radio_btn_label"
+            android:textSize="@dimen/default_text_size" />
+
+        <RadioButton
+            android:id="@+id/retrofit_radio_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/radio_default_margin"
+            android:text="@string/retrofit_radio_btn_label"
+            android:textSize="@dimen/default_text_size" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="413dp"
+        android:layout_height="210dp"
+        android:background="@color/colorPrimaryDark"
+        android:contentDescription="@string/load_status_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_assistant_black_24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
